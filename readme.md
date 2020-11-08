@@ -81,4 +81,4 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/Main_Compressport.png" width="375px" alt="Main Compressport">
+<img src="images/Sportpage_Compressport.png" width="375px" alt="Sportpage Compressport">
