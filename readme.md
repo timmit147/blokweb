@@ -73,12 +73,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** responsive
 
-**Je opdracht:** https://www.compressport.com/inter/en/
+**Je opdracht:** https://only.one/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/Hompage_Compressport.png" width="375px" alt="Homepage Compressport">
+<img src="images/only.one_home.png" width="375px" alt="Homepage Compressport">   
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/Sportpage_Compressport.png" width="375px" alt="Sportpage Compressport">
+<img src="images/only.one_explore.png" width="375px" alt="Sportpage Compressport">
