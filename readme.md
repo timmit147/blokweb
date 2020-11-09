@@ -64,6 +64,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
 
+<img src="images/only.one_breakdown-schets.jpg" width="375px" alt="Homepage Compressport">  
+
 
 
 ## Intake (week 1)
