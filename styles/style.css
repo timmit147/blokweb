@@ -5,6 +5,11 @@
   box-sizing:border-box;  
 }
 
+body > * {
+	padding: 20px;
+width: 100%;
+}
+
 @font-face {
     font-family: 'Whyte';
     src: url('../fonts/Whyte-Black.ttf') format('truetype');
@@ -22,21 +27,96 @@ body{
 	font-family: 'Whyte';
 	margin: 0px;
 	font-size: 16px;
-	width: 100vw;
+	width: 80vw;
 	background-color: red;
 	color: white;
-	overflow-x: hidden;
 }
 
-header{
+section{
+	    display: grid;
+}
 
-	  background-image:
+.btn{
+	background-color: #00b1d2;
+    border-color: #00b1d2;
+    color: #fff;
+    border-radius: 50px;
+    padding: 5px 20px;
+    width: max-content;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+a{
+	color: #00b1d2;
+	text-decoration: underline;
+}
+
+ul{
+	list-style: none;
+	padding: 0px;
+}
+
+/*navigation*/
+nav{
+	position: fixed;
+	bottom: 0;
+	padding: 0px;
+}
+
+nav ul{
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+  	align-items: stretch;
+  	height: 50px;
+	width: 100vw;
+}
+
+
+nav li{
+	flex: 1;
+	background-color: #09121f;
+	text-align: center;
+	display: block;
+	height: 100%;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+  	font-size: 14px;
+  	flex-direction: column;
+}
+
+nav li:before{
+	 width: 15px;
+}
+
+nav li:nth-child(1):before{
+content: url("../images/latest.svg");
+}
+
+nav li:nth-child(2):before{
+content: url("../images/explore.svg");
+}
+
+nav li:nth-child(3):before{
+content: url("../images/act.svg");
+}
+
+nav li:nth-child(4):before{
+content: url("../images/tide.svg");
+}
+
+
+/*header*/
+header{
+	background-image:
     linear-gradient(to bottom, #000000a3, #ffffff00, #000216,#000216),
     url('../images/header.jpg');
 	background-size: cover;
     background-position: top;
     height: 100vh;
-	padding: 10px;
 	text-align: center;
 }
 
@@ -55,6 +135,7 @@ header{
 
 header p{
 	width: 100%;
+	float: left;
 }
 
 .start{
@@ -102,28 +183,6 @@ header p:nth-of-type(2){
 	line-height: 1.2em;
 }
 
-.btn{
-	background-color: #00b1d2;
-    border-color: #00b1d2;
-    color: #fff;
-    border-radius: 50px;
-    padding: 15px;
-    width: 100%;
-    max-width: 200px;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-}
-
-a{
-	color: #00b1d2;
-	text-decoration: underline;
-}
-
-ul{
-	list-style: none;
-}
-
 main{
 	background-color: #000216;
 }
@@ -154,13 +213,23 @@ main{
 	width: 20vw;
 	height: 50vw;
 }
+#foryou li:nth-child(1){
+background:
+    radial-gradient(#000e5d  16px, transparent 4px);
+    background-size: 50px 50px;
+}
 
 
 /*section 3*/
 #change li{
-	width: 80vw;
-	height: 80vw;
+	height: 100%;
 	background-size: cover;
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 50px;
+	    height: 50vh;
+	background-position: center;
 }
 
 #change li:nth-child(1){
@@ -175,6 +244,31 @@ main{
 	background-image: url("../images/plastic-header.jpg");
 }
 
+#change li p:nth-child(3){
+	background-color: #33689c;
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding: 10px;
+}
+
+#change li h3{
+	font-size: 50px;
+	position: absolute;
+	bottom: 40px;
+	left: 10px;
+	z-index: 10;
+}
+
+
+#change li p:nth-child(1){
+	position: absolute;
+	bottom: 130px;
+	left: 10px;
+	z-index: 10;
+}
+
+
 /*section 4*/
 #quotes img{
 	width: 15vw;
@@ -186,56 +280,19 @@ main{
 #join{
 	background-image: url("../images/wave-hawaii.jpg");
 	background-size: cover;
+	    padding: 70px 30px 20px 30px;
+    border-radius: 20px;
+    text-align: center;
 }
 
 /*section 6*/
 #community img{
-	width: 50vw;
-	height: 100vw;
+	width: 100%;
 }
 
 /*footer*/
 footer{
 	background-color: #09121f;
+	margin-bottom: 50px;
 }
 
-
-/*navigation*/
-nav{
-	background-color: #09121f;
-	position: fixed;
-	height: 50px;
-	width: 80vw;
-	bottom: 0;
-}
-
-nav ul{
-	padding: 0px;
-margin: 0px;
-	display: flex;
-  align-items: stretch;
-}
-
-
-/*navigation*/
-nav li{
-	flex: 1;
-	background-color: red;
-	text-align: center;
-	display: block;
-}
-
-/*nav ul{
-padding: 0px;
-margin: 0px;
-height: 100%;
-
-
-}
-
-nav li {
-	width: 25%;
-	height: 100%;
-	background-color: red;
-
-}*/
