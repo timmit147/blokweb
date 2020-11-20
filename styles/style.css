@@ -1,5 +1,241 @@
 /* CSS Document */
+
+/*Algemeen*/
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('../fonts/Whyte-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+
+body{
+	font-family: 'Whyte';
+	margin: 0px;
+	font-size: 16px;
+	width: 100vw;
+	background-color: red;
+	color: white;
+	overflow-x: hidden;
+}
+
+header{
+
+	  background-image:
+    linear-gradient(to bottom, #000000a3, #ffffff00, #000216,#000216),
+    url('../images/header.jpg');
+	background-size: cover;
+    background-position: top;
+    height: 100vh;
+	padding: 10px;
+	text-align: center;
+}
+
+#logo{
+	width: 5vw;
+	position: absolute;
+	left: 0px;
+}
+
+.login{
+	color: white;
+	text-decoration: none;
+	float: right;
+	    padding: 5px 10px;
+}
+
+header p{
+	width: 100%;
+}
+
+.start{
+	color: white;
+	padding: 5px 10px;
+	border:solid 1px white;
+	border-radius: 30px;
+	text-decoration: none;
+	float: right;
+}
+
+.trailerbtn{
+	background-color: #ffffff00;
+	 border-radius: 50%;
+	 border: 3px solid white;
+	 width: 20vw;
+	 height: 20vw;
+	 position: relative;
+}
+
+.trailerbtn:before{
+	    content: "";
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    background-color: white;
+    width: 7vw;
+    height: 8vw;
+    position: absolute;
+    top: 28%;
+    left: 38%;
+}
+
+
+h1{
+	font-family: Action Condensed,arial,sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 60px;
+	line-height: 1em;
+}
+
+header p:nth-of-type(2){
+	color: #00b1d2;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 1.2em;
+}
+
+.btn{
+	background-color: #00b1d2;
+    border-color: #00b1d2;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px;
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+a{
+	color: #00b1d2;
+	text-decoration: underline;
+}
+
+ul{
+	list-style: none;
+}
+
+main{
+	background-color: #000216;
+}
+
+/*section 1*/
+#foryou h2 {
+	text-align: center;
+}
+
+
+#foryou img{
+	width: 50vw;
+	height: 50vw;
+	border-radius: 50%;
+}
+
+#foryou h3 {
+	color: #6796cd;
+}
+
+/*section 2*/
+.desktop_bg{
+	width: 50vw;
+	height: 50vw;
+}
+
+.loop_bg{
+	width: 20vw;
+	height: 50vw;
+}
+
+
+/*section 3*/
+#change li{
+	width: 80vw;
+	height: 80vw;
+	background-size: cover;
+}
+
+#change li:nth-child(1){
+	background-image: url("../images/ShawnHeinrichs-20161216-180853-_B4V0313.jpg");
+}
+
+#change li:nth-child(2){
+	background-image: url("../images/stock-morondava-madagascar.jpg");
+}
+
+#change li:nth-child(3){
+	background-image: url("../images/plastic-header.jpg");
+}
+
+/*section 4*/
+#quotes img{
+	width: 15vw;
+	height: 15vw;
+	border-radius: 50%;
+}
+
+/*section 5*/
+#join{
+	background-image: url("../images/wave-hawaii.jpg");
+	background-size: cover;
+}
+
+/*section 6*/
+#community img{
+	width: 50vw;
+	height: 100vw;
+}
+
+/*footer*/
+footer{
+	background-color: #09121f;
+}
+
+
+/*navigation*/
+nav{
+	background-color: #09121f;
+	position: fixed;
+	height: 50px;
+	width: 80vw;
+	bottom: 0;
+}
+
+nav ul{
+	padding: 0px;
+margin: 0px;
+	display: flex;
+  align-items: stretch;
+}
+
+
+/*navigation*/
+nav li{
+	flex: 1;
+	background-color: red;
+	text-align: center;
+	display: block;
+}
+
+/*nav ul{
+padding: 0px;
+margin: 0px;
+height: 100%;
+
+
+}
+
+nav li {
+	width: 25%;
+	height: 100%;
+	background-color: red;
+
+}*/
