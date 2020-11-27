@@ -40,19 +40,25 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -dit ging goed & dit was lastig-
 
+Lastig verloop achter For you, on Only One maken. Sanne heeft dit uitijndelijk gemaakt en heb ik de kleuren aangepast en hoe groot het is.
+
+Scrollbarr in de breete snap ik nog niet waarom die dat toont omdat alles binnen de 100vw breete zit en verdwijnt ook niet als ik overvlow hidden doe op de body of main.
+
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
+
+Ik ben bijna klaar met de homepagina alleen nog wit ruimte en kleine aanpasingen.
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Tugce          | Romi               | Yas-lin      | 
+| ---            | ---                | ---          | 
+| dit bespreken  | en dit             | en ik dit    | 
+| an dat ook nog | dit als er tijd is | nog een punt |
+| ...            | ...                | ...          | 
 
 ### Verslag van meeting
 

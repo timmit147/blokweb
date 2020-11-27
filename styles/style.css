@@ -28,12 +28,7 @@ body{
 	margin: 0px;
 	font-size: 16px;
 	width: 100vw;
-	background-color: red;
 	color: white;
-}
-
-section{
-	    display: grid;
 }
 
 .btn{
@@ -63,6 +58,7 @@ nav{
 	position: fixed;
 	bottom: 0;
 	padding: 0px;
+	z-index: 999;
 }
 
 nav ul{
@@ -123,7 +119,7 @@ header{
 #logo{
 	width: 5vw;
 	position: absolute;
-	left: 0px;
+	left: 10px;
 }
 
 .login{
@@ -176,6 +172,10 @@ h1{
 	line-height: 1em;
 }
 
+h2{
+	font-size: 2.5em;
+}
+
 header p:nth-of-type(2){
 	color: #00b1d2;
 	font-size: 25px;
@@ -195,8 +195,9 @@ main{
 
 #foryou img{
 	width: 50vw;
-	height: 50vw;
+	height: auto;
 	border-radius: 50%;
+	    max-width: 250px;
 }
 
 #foryou h3 {
@@ -204,22 +205,116 @@ main{
 }
 
 /*section 2*/
+#watch{
+	position: relative;
+}
+
+
 .desktop_bg{
-	width: 50vw;
-	height: 50vw;
+	width: 100vw;
+	height: auto;
 }
 
 .loop_bg{
 	width: 20vw;
 	height: 50vw;
+	position: absolute;
+	    left: 7vh;
+    bottom: 7vh;
 }
+
+
+/*Gemaakt door Sanne 't Hoofd*/
+#foryou li, #quotes{
+
+  --dark:#000316;
+  --transparent:#00031600;
+  --light:#ff6f611c;
+  --maat:100vw;
+  --blur:2px;
+  
+  background-color:var(--dark);
+  
+  background-image:
+    radial-gradient(
+      closest-side,
+      var(--transparent) calc(100% - var(--blur)),
+      var(--dark) calc(100% + var(--blur))
+    ),
+    radial-gradient(
+      circle at 200% center, 
+      var(--dark) 60%,
+      var(--light) 95%
+    ),
+    radial-gradient(
+      circle at -100% center, 
+      var(--dark) 60%,
+      var(--light) 95%
+    ),
+    radial-gradient(
+      circle at 200% center, 
+      var(--dark) 60%,
+      var(--light) 95%
+    ),
+    radial-gradient(
+      circle at -100% center, 
+      var(--dark) 60%,
+      var(--light) 95%
+    ),
+    radial-gradient(
+      circle at 200% center, 
+      var(--dark) 60%,
+      var(--light) 95%
+    );
+  
+  background-size:
+    var(--maat) var(--maat),
+    var(--maat) var(--maat),
+    var(--maat) var(--maat),
+    var(--maat) var(--maat),
+    var(--maat) var(--maat),
+    var(--maat) var(--maat);
+  background-repeat:
+    repeat,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x;
+  background-position:
+    left calc(var(--maat) * 0.15),
+    left calc(var(--maat) * 0.15),
+    left calc(var(--maat) * 1.15),
+    left calc(var(--maat) * 2.15),
+    left calc(var(--maat) * 3.15),
+    left calc(var(--maat) * 4.15);
+}
+
 #foryou li:nth-child(1){
-background:
-    radial-gradient(#000e5d  16px, transparent 4px);
-    background-size: 50px 50px;
+    --light:#16192c;
+      --maat:15.6vw;
+}
+
+#foryou li:nth-child(1) h3{
+ color: #6796cd;
+}
+
+#foryou li:nth-child(2){
+  --light:#58745854;
+    --maat:40vw;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#foryou li:nth-child(2) h3{
+ color: #587458;
 }
 
 
+#foryou li:nth-child(3) h3{
+ color: #ff6f61;
+}
 /*section 3*/
 #change li{
 	height: 100%;
@@ -230,18 +325,22 @@ background:
 	margin-bottom: 50px;
 	    height: 50vh;
 	background-position: center;
+	max-width: 400px;
 }
 
 #change li:nth-child(1){
-	background-image: url("../images/ShawnHeinrichs-20161216-180853-_B4V0313.jpg");
+	background-image: linear-gradient(to bottom, #000000a3, #ffffff00, #000216ed,#000216),
+    url("../images/ShawnHeinrichs-20161216-180853-_B4V0313.jpg");
 }
 
 #change li:nth-child(2){
-	background-image: url("../images/stock-morondava-madagascar.jpg");
+	background-image: linear-gradient(to bottom, #000000a3, #ffffff00, #000216ed,#000216),
+    url("../images/stock-morondava-madagascar.jpg");
 }
 
 #change li:nth-child(3){
-	background-image: url("../images/plastic-header.jpg");
+		background-image: linear-gradient(to bottom, #000000a3, #ffffff00, #000216ed,#000216),
+    url("../images/plastic-header.jpg");
 }
 
 #change li p:nth-child(3){
@@ -250,6 +349,14 @@ background:
 	bottom: 0;
 	margin: 0;
 	padding: 10px;
+}
+
+#change li:nth-child(2) p:nth-child(3){
+	background-color: #009476 ;
+}
+
+#change li:nth-child(3) p:nth-child(3){
+	background-color: #ab697c ;
 }
 
 #change li h3{
@@ -270,19 +377,58 @@ background:
 
 
 /*section 4*/
+ #quotes{
+   --maat:15.6vw;
+   color: #ff6f61;
+}
+
+ #quotes a{
+  background-color: #ff6f61;
+ }
+
+ #quotes h2{
+ 	color: white;
+ }
+
 #quotes img{
 	width: 15vw;
 	height: 15vw;
 	border-radius: 50%;
 }
 
+#quotes p:last-child{
+	display: inline-block;	
+}
+
+q{
+	display: block;
+	padding: 20px 0px;
+}
 /*section 5*/
 #join{
 	background-image: url("../images/wave-hawaii.jpg");
 	background-size: cover;
 	    padding: 70px 30px 20px 30px;
     border-radius: 20px;
-    text-align: center;
+    text-align: center;    
+    max-width: 400px;
+    position: relative;
+
+}
+
+#join h2{
+	font-size: 1.5em;
+}
+
+#join:before {
+    content: "";
+    background-image: url(../images/waves-30x30-1.svg);
+    height: 500px;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
 }
 
 /*section 6*/
@@ -294,5 +440,21 @@ background:
 footer{
 	background-color: #09121f;
 	margin-bottom: 50px;
+	color: #909090;
+
 }
 
+footer ul li{
+	text-decoration: underline;
+}
+
+
+footer a.btn:nth-child(2){
+background-color: #ff6f61;
+}
+
+
+footer a.btn:nth-child(3){
+background-color: transparent;
+border:1px solid white;
+}
