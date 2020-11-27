@@ -46,7 +46,8 @@ Scrollbarr in de breete snap ik nog niet waarom die dat toont omdat alles binnen
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+
+<img src="images/Voortgang1.png" width="375px" alt="Homepage Compressport">  
 
 Ik ben bijna klaar met de homepagina alleen nog wit ruimte en kleine aanpasingen.
 
