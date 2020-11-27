@@ -19,11 +19,6 @@ function filterall() {
    all[i].classList.toggle('show');
 }
 
-if(filterjourney.classList.contains('selected')){
-filterjourney();
-}
-
-
 }
 
 

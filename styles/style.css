@@ -7,7 +7,6 @@
 
 body > * {
 	padding: 20px;
-width: 100%;
 }
 
 @font-face {
@@ -27,7 +26,6 @@ body{
 	font-family: 'Whyte';
 	margin: 0px;
 	font-size: 16px;
-	width: 100vw;
 	color: white;
 }
 
@@ -121,7 +119,7 @@ header{
 }
 
 #logo{
-	width: 5vw;
+	width: 7%;
 	position: absolute;
 	left: 10px;
 }
@@ -215,7 +213,7 @@ main{
 
 
 .desktop_bg{
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 
@@ -329,7 +327,9 @@ main{
 	margin-bottom: 50px;
 	    height: 50vh;
 	background-position: center;
-	max-width: 400px;
+	    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #change li:nth-child(1){
@@ -347,12 +347,16 @@ main{
     url("../images/plastic-header.jpg");
 }
 
+
+#change li > *{
+padding: 10px;
+    margin: 0px;
+}
+
+
 #change li p:nth-child(3){
 	background-color: #33689c;
-	position: absolute;
-	bottom: 0;
-	margin: 0;
-	padding: 10px;
+	width: 100%;
 }
 
 #change li:nth-child(2) p:nth-child(3){
@@ -365,18 +369,6 @@ main{
 
 #change li h3{
 	font-size: 50px;
-	position: absolute;
-	bottom: 40px;
-	left: 10px;
-	z-index: 10;
-}
-
-
-#change li p:nth-child(1){
-	position: absolute;
-	bottom: 130px;
-	left: 10px;
-	z-index: 10;
 }
 
 
@@ -415,9 +407,7 @@ q{
 	    padding: 70px 30px 20px 30px;
     border-radius: 20px;
     text-align: center;    
-    max-width: 400px;
     position: relative;
-
 }
 
 #join h2{
@@ -481,7 +471,7 @@ border:1px solid white;
     font-size: 14px;
 }
 
-#filter li:hover,.selected{
+#filter li:active,.selected{
 	background-color: white;
 	color: #000216;
 }
