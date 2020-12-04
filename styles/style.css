@@ -113,10 +113,11 @@ header{
 	background-image:
     linear-gradient(to bottom, #000000a3, #ffffff00, #000216,#000216),
     url('../images/header.jpg');
-	background-size: cover;
     background-position: top;
     height: 100vh;
 	text-align: center;
+	background-size: cover, auto 99vh;
+	background-repeat: no-repeat;
 }
 
 #logo{
@@ -177,6 +178,7 @@ h1{
 
 h2{
 	font-size: 2.5em;
+	line-height: 1.2em;
 }
 
 header p:nth-of-type(2){
@@ -197,10 +199,9 @@ main{
 
 
 #foryou img{
-	width: 50vw;
+	width: 50%;
 	height: auto;
 	border-radius: 50%;
-	    max-width: 250px;
 }
 
 #foryou h3 {
@@ -229,6 +230,7 @@ main{
 
 /*Gemaakt door Sanne 't Hoofd*/
 #foryou li, #quotes{
+	margin: 100px 0px;
 
   --dark:#000316;
   --transparent:#00031600;
@@ -401,6 +403,10 @@ q{
 	display: block;
 	padding: 20px 0px;
 }
+
+
+
+
 /*section 5*/
 #join{
 	background-image: url("../images/wave-hawaii.jpg");
@@ -409,6 +415,7 @@ q{
     border-radius: 20px;
     text-align: center;    
     position: relative;
+    margin: 80px 0px;
 }
 
 #join h2{
@@ -418,7 +425,7 @@ q{
 #join:before {
     content: "";
     background-image: url(../images/waves-30x30-1.svg);
-    height: 500px;
+    height: 340px;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -427,8 +434,31 @@ q{
 }
 
 /*section 6*/
+#community{
+		overflow: hidden;
+}
+
 #community img{
+	border-radius: 50%;
 	width: 100%;
+}
+
+#community section{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 120%;
+	margin: 100px 0px;
+	    margin-left: -10%;
+}
+
+
+#community section img{
+	margin-left: 25%;
+}
+
+
+#community section img:nth-of-type(6n+1) , #community section img:nth-of-type(6n+2),#community section img:nth-of-type(6n+3	) {
+	margin-left: -25%;
 }
 
 /*footer*/
@@ -492,4 +522,109 @@ border:1px solid white;
 
 #explore h1 {
     margin-top: 1em;
+}
+
+
+/*Breakpoint tablet*/
+
+@media only screen and (min-width: 450px) {
+
+	#foryou ul {
+	   	    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+	}
+
+	#foryou li{
+		padding: 20px;
+	}
+
+	#foryou li:nth-child(2){
+		align-items: flex-start;
+	}
+
+
+	#foryou img{
+		width: 80%;
+	}
+
+
+	#community section{
+		    grid-template-columns:  1fr 1fr 1fr 1fr;
+	}
+
+	#community section img{
+		margin-left: 0px;
+	}
+
+	#community section img:nth-of-type(6n+1), #community section img:nth-of-type(6n+2), #community section img:nth-of-type(6n+3 ){
+		margin-left :0px;
+	}
+
+	#join{
+		    max-width: 500px;
+	}
+
+	#join:before{
+		display: none;
+	}
+
+	#change ul{
+		    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+
+	}
+}
+
+
+@media only screen and (min-width: 950px) {
+	#change ul, #foryou ul {
+    grid-template-columns: 1fr 1fr 1fr;
+	}
+
+		#community section{
+		    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr ;
+	}
+
+
+	#home header{
+		background-size: cover;
+	}
+	#logo{
+		width: 3%;
+	}
+
+	.trailerbtn{
+width: 10vw;
+    height: 10vw;
+	}
+
+	.trailerbtn:before{
+    width: 3vw;
+    height: 4vw;
+    left: 41%;
+	}
+
+	q{
+		font-size: 32px;
+	}
+
+	 #quotes{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#quotes *:nth-child(-n+3){
+	    grid-column: 1;
+	     grid-row: 1;
+
+ }
+
+ #quotes *:nth-last-child(-n+3){
+	    grid-column: 2;
+	    grid-row: 1;
+
+ }
+
 }
