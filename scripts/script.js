@@ -6,9 +6,15 @@ var seriesfilter = document.querySelector("#filterseries");
 
 
 /* same same */
+if(allfilter){
 allfilter.addEventListener("click", filterall);
+}
+if(journeyfilter){
 journeyfilter.addEventListener("click", filterjourney);
-seriesfilter.addEventListener("click", filterseries);
+}
+if(seriesfilter){
+  seriesfilter.addEventListener("click", filterseries);
+}
 
 
 /* same same */
