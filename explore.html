@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="nl">
 	
+	<!-- Header -->
 	<head>
 		<meta charset="UTF-8">
 		<meta name="author" content="jouw naam">
@@ -10,13 +11,14 @@
 		
 		<link href="styles/style.css" rel="stylesheet">
 	</head>
+	<!-- Body -->
 	<body id="explore">
 		<nav>
 			<ul>
-				<li>Latest</li>
+				<li ><a href="#">Latest</a></li>
 				<li><a href="explore.html">Explore</a></li>
-				<li>Act</li>
-				<li>Tide</li>
+				<li><a href="#">Act</a></li>
+				<li><a href="#">Tide</a></li>
 			</ul>
 		</nav>
 		<header>
@@ -33,28 +35,61 @@
 				<li>Spotlights</li>
 			</ul>
 		</header>
+		<!-- Main -->
 		<main>
-			<section class="journey">
+			<!-- section 1: journey -->
+			<section class="journey" id="change">
 				<h2>Journeys</h2>
 				<p>Planet-wide missions to help heal the ocean and our communities, this decade.</p>
+				<div>
+					<article>
+						<p>Journey</p>
+						<h3>30x30</h3>
+						<p>Protecting at least 30% of the global ocean by 2030</p>
+					</article>
+					<article>
+						<p>Journey</p>
+						<h3>Grean seas</h3>
+						<p>Unlocking the power of the ocean as a climate solution</p>
+					</article>
+					<article>
+						<p>Journey</p>
+						<h3>Material change</h3>
+						<p>Rethinking plastic and stopping pollution at the source</p>
+					</article>
+					<a class="btn" href="#">Get started</a>
+				</div>
 			</section>
-			<section class="series">
+			<!-- Section 2:Series -->
+			<section class="series" id="quotes">
 				<h2>Series</h2>
 				<p>Planet-wide missions to help heal the ocean and our communities, this decade.</p>
+				<blockquote>
+					<p>All over the globe, the ocean is telling us its urgent story, evident not only in the effects of pollution and overfishing but also the growing signs of climate change.</p>
+					<footer>
+						<img src="images/Screenshot_2020-09-15_at_13.12.03.png">
+						Cristina berniot
+					</footer>
+				</blockquote>
+				<a class="btn" href="#">Join the community</a>
 			</section>
+			<!-- Section 3:shorts -->
 			<section class="short">
 				<h2>Short</h2>
 				<p>Planet-wide missions to help heal the ocean and our communities, this decade.</p>
 			</section>
+			<!-- Section 4: long -->
 			<section class="long">
 				<h2>long</h2>
 				<p>Planet-wide missions to help heal the ocean and our communities, this decade.</p>
 			</section>
+			<!-- Section 5:spotlight -->
 			<section class="spotlight">
 				<h2>Spotlight</h2>
 				<p>Planet-wide missions to help heal the ocean and our communities, this decade.</p>
 			</section>
 		</main>
+		<!-- Footer -->
 		<footer>
 			<ul>
 				<li>About Only One</li>
@@ -71,6 +106,7 @@
 			<p>non-profit in the United States.</p>
 			
 		</footer>
+		<!-- Javascript -->
 		<script src="scripts/script.js"></script>
 	</body>
 </html>

@@ -1,11 +1,11 @@
 // JavaScript Document
-/* same same */
+/* Buttons selecteren */
 var allfilter = document.querySelector("#filterall");
 var journeyfilter = document.querySelector("#filterjourney");
 var seriesfilter = document.querySelector("#filterseries");
 
 
-/* same same */
+/* When clicking on a button start funtion */
 if(allfilter){
 allfilter.addEventListener("click", filterall);
 }
@@ -17,7 +17,7 @@ if(seriesfilter){
 }
 
 
-/* same same */
+/* Funtion show all items*/
 function filterall() {
   var all = document.querySelectorAll("section");
   allfilter.classList.toggle('selected');
@@ -28,7 +28,7 @@ function filterall() {
 }
 
 
-
+// Funtion only show journey
 function filterjourney() {
   var journey = document.querySelectorAll(".journey");
     journeyfilter.classList.toggle('selected');
@@ -42,6 +42,8 @@ filterall();
 
 }
 
+
+// Funtion only show series
 function filterseries() {
   var series = document.querySelectorAll(".series");
     seriesfilter.classList.toggle('selected');
