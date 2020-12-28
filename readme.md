@@ -22,8 +22,8 @@ Lastig vind ik dat je niet teveel code mag toevoegen maar code moet schijven die
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
-
+<img src="images/Laatste-screenshot.png" width="375px" alt="Homepage laatse sreenshot">  
+<img src="images/Filter-pagina.png" width="375px" alt="Homepage laatse sreenshot">  
 
 
 ## Voortgang 3 (week 6)
@@ -41,9 +41,9 @@ De website heeft deze week niet veel aanpassingen gehad omdat ik een vak van vor
 ### Stand van zaken
 
 
-Lastig verloop achter For you, on Only One maken. Sanne heeft dit uitijndelijk gemaakt en heb ik de kleuren aangepast en hoe groot het is.
+Lastig achtergrond patroon achter For you section. Sanne heeft dit uitijndelijk gemaakt en heb ik de kleuren aangepast en hoe groot het is.
 
-Scrollbarr in de breete snap ik nog niet waarom die dat toont omdat alles binnen de 100vw breete zit en verdwijnt ook niet als ik overvlow hidden doe op de body of main.
+Scrollbarr in de breete begrijp ik nog niet waarom die dat toont omdat alles binnen de 100vw breete zit en verdwijnt ook niet als ik overvlow hidden doe op de body of main.
 
 
 <img src="images/Voortgang1.png" width="375px" alt="Homepage Compressport">  
@@ -52,19 +52,11 @@ Ik ben bijna klaar met de homepagina alleen nog wit ruimte en kleine aanpasingen
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
-
-| Tugce          | Romi               | Yas-lin      | 
-| ---            | ---                | ---          | 
-| dit bespreken  | en dit             | en ik dit    | 
-| an dat ook nog | dit als er tijd is | nog een punt |
-| ...            | ...                | ...          | 
+Agenda punten die we wilden weten waren indivudiueel over javascript menu, HTML opbouw en articles en sections.
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
-
-
+Ik heb samen met Tugce, Romi en Yas-Lin een voortgangs gesprek gehad over hoe ver we waren met de website. Ik had vooral vragen over de articles en sections hoe je deze het beste kon gebruiken en de ander uit het groepje wilden meer weten over de Javascript en de opbouw van de html.
 
 
 ## Breakdownschets (week 1)
