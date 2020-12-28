@@ -464,7 +464,7 @@ q {
 	width: 100%;
 }
 
-#community section {
+#community div {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	width: 120%;
@@ -473,13 +473,13 @@ q {
 	margin-top: 20px;
 }
 
-#community section img {
+#community div img {
 	margin-left: 25%;
 }
 
-#community section img:nth-of-type(6n+1),
-#community section img:nth-of-type(6n+2),
-#community section img:nth-of-type(6n+3) {
+#community div img:nth-of-type(6n+1),
+#community div img:nth-of-type(6n+2),
+#community div img:nth-of-type(6n+3) {
 	margin-left: -25%;
 }
 
@@ -607,15 +607,15 @@ body>footer a.btn:nth-child(3) {
 	#foryou li:nth-child(1) p {
 		grid-column: 2;
 	}
-	#community section {
+	#community div {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
-	#community section img {
+	#community div img {
 		margin-left: 0;
 	}
-	#community section img:nth-of-type(6n+1),
-	#community section img:nth-of-type(6n+2),
-	#community section img:nth-of-type(6n+3) {
+	#community div img:nth-of-type(6n+1),
+	#community div img:nth-of-type(6n+2),
+	#community div img:nth-of-type(6n+3) {
 		margin-left: 0;
 	}
 	#join:before {
@@ -677,7 +677,7 @@ body>footer a.btn:nth-child(3) {
 	#foryou li:nth-child(1) img {
 		width: 80%;
 	}
-	#community section {
+	#community div {
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
 	#home header {
